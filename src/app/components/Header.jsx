@@ -5,7 +5,7 @@ import {BsFillInfoCircleFill} from "react-icons/bs";
 
 export default function Header() {
   return (
-    <header className='max-w-4xl flex items-center w-full justify-between p-5 mx-auto'>
+    <header className='max-w-4xl flex items-center w-full justify-between p-5 mx-auto shadow-sm'>
       <div className='p-1 px-4 bg-orange-500 text-lg rounded-md'>imdb</div>
       <div className='flex items-center gap-5'>
         <ThemeSwitch />
