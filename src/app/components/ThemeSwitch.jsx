@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
 export default function ThemeSwitch () {
-    const {theme, setTheme, systemTheme}= useTheme('dark');
+    const {theme, setTheme, systemTheme}= useTheme('');
     const [mounted, setMounted] = useState(false);
 
     const currentTheme = theme === 'system' ? systemTheme : theme;
