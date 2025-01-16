@@ -11,6 +11,8 @@ export default function ThemeSwitch () {
     const currentTheme = theme === 'system' ? systemTheme : theme;
     useEffect(() => setMounted(true), [])
     return <div>
-        {mounted && (currentTheme === 'dark' ? <MdLightMode onClick={() => setTheme('light')} className='text-xl hover:text-amber-500'/> : <MdDarkMode onClick={() => setTheme('dark')} className='text-xl hover:text-amber-500'/>)}
+        {mounted && (currentTheme === 'dark' ? 
+            <MdLightMode onClick={() => setTheme('light')} className='text-xl hover:text-amber-500'/> : 
+            <MdDarkMode onClick={() => setTheme('dark')} className='text-xl hover:text-amber-500'/>)}
     </div>
 }
